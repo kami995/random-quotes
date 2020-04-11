@@ -21,15 +21,20 @@ class QuoteBox extends React.Component{
     }    
     
     render(){
+        let tweetURL = 'https://twitter.com/intent/tweet?text=' + '"' + this.state.tekst + '"' + ' -' + this.state.author;
         return(
-
             <div id="quote-box">
                     <div>
                         <p id="text">"{this.state.tekst}"</p>
                         <p id="author">{this.state.author}</p>
                     </div>                          
                     <Button promeni={this.generateNew.bind(this)} />
-                    <TweetButton />
+                    <div><br />
+                        <a id="tweet-quote" 
+                        href={tweetURL} 
+                        rel="noopener noreferrer" 
+                        target="_blank">Tweet this</a>
+                    </div>
             </div>
             
         );
@@ -49,19 +54,6 @@ class Button extends React.Component{
                  New Quote
             </button>
         );
-    }
-}
-
-class TweetButton extends React.Component{
-    render(){
-        return(
-            <div><br />
-                <a id="tweet-quote" 
-                href="https://twitter.com/intent/tweet?text=" 
-                rel="noopener noreferrer" 
-                target="_blank">Tweet this</a>
-            </div>
-        )
     }
 }
 
