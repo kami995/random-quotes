@@ -7,10 +7,14 @@ class QuoteBox extends React.Component{
     constructor(props){
         super(props);
             this.state = {
-                tekst: quotes[0][0],
-                author: quotes[0][1]
+                tekst: '',
+                author: ''
             };
         }
+
+    componentDidMount(){
+        this.generateNew();
+    }
 
     generateNew(){
         let broj = Math.floor(Math.random() * quotes.length);
