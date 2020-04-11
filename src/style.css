@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root {
+    padding: 15% 0;
+}
+
+#quote-box{
+    max-width: 550px;
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: white;
+    color: rgb(22, 22, 22);
+}
+
+#text {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#author {
+    text-align: right;
+    padding-right: 2em;
+}
+
+#new-quote {
+    margin: 1em;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+#new-quote:hover{
+    cursor: pointer;
+}
+
+#tweet-quote {
+    text-decoration: none;
+}
+#tweet-quote:visited {
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+#tweet-quote:hover {
+    color: rgb(92, 56, 56);
+}
