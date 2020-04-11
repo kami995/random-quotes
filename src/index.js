@@ -36,21 +36,6 @@ class QuoteBox extends React.Component{
     }
 }
 
-// class Text extends QuoteBox{
-//     // eslint-disable-next-line
-//     constructor(props){
-//         super(props);
-//     }
-//     render(){
-//         return(
-//         <div>
-//             <p id="text">"{this.props.tekst}"</p>
-//             <p id="author">{this.props.author}</p>
-//         </div>
-//         );
-//     }
-// }
-
 class Button extends React.Component{
     // eslint-disable-next-line
     constructor(props){
@@ -72,7 +57,7 @@ class TweetButton extends React.Component{
         return(
             <div><br />
                 <a id="tweet-quote" 
-                href="https://twitter.com/" 
+                href="https://twitter.com/intent/tweet?text=" 
                 rel="noopener noreferrer" 
                 target="_blank">Tweet this</a>
             </div>

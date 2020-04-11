@@ -1,21 +1,25 @@
 body {
     background-color: rgb(22, 22, 22);
     color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#root {
-    padding: 15% 0;
-}
-
 #quote-box{
-    max-width: 550px;
-    min-height: 70px;
+    text-align: center;
+    width: 550px;
     margin: 0 auto;
     padding: 1em;
     background-color: white;
     color: rgb(22, 22, 22);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 #text {
