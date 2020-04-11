@@ -53,3 +53,14 @@ a{
 #tweet-quote:hover {
     color: rgb(92, 56, 56);
 }
+
+@media(max-width: 700px){
+    #quote-box{
+        text-align: center;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 1em;
+        background-color: white;
+        color: rgb(22, 22, 22);
+    }
+}
